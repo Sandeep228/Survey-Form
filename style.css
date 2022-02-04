@@ -1,0 +1,139 @@
+body{
+  background: #F0EBF8;
+}
+
+.container{
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#fname, #lname, #email{
+  width: 100%;
+}
+
+input[type=text], input[type=email] {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline-width: 0px;
+  padding: 4px;
+  border-radius: 2%;
+}
+
+.row{
+  margin-bottom: 15px;
+}
+
+.subnames{
+  font-size: 12px;
+}
+
+.required{
+  color: red
+}
+
+strong{
+  font-size: 20px;
+}
+.rating p {
+  display: inline;
+  font-size: 36px;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.star {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: orange;
+}
+
+.rating input[type="radio"]:checked ~ .star {
+  color: orange;
+}
+
+.sub-text{
+  font-size: 12px;
+}
+
+.middle{
+  text-align: center;
+  padding-top: 0px !important;
+}
+
+.middle > input{
+  margin-top: 12px !important;
+}
+
+.smallScreen > p{
+  margin-top: 12px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.smallScreen > div{
+  margin-left: 16px;
+}
+
+.smallScreen > p:nth-child(1){
+  margin-top: 0px;
+}
+
+.textbox{
+  padding-top: 8px;
+}
+
+textarea
+{
+  border: none;
+  width:100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2%;
+}
+
+button{
+  color: #F0EBF8;
+    background: blueviolet;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 32px;
+    text-align: center;
+}
+@media (max-width: 576px) {
+  .table{
+    display: none;
+  }
+  button{
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .thWidth {
+    width: 87px;
+  }
+  .smallScreen{
+    display: none;
+  } 
+}
+@media (min-width: 768px) {
+  .thWidth {
+    width: 162px;
+  }
+}
+@media (min-width: 992px) {
+  .thWidth {
+    width: 300px;
+  }
+}
